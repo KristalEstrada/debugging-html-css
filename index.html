@@ -2,7 +2,7 @@
 <html>
  <head>
     <!--<meta> -->
-    <meta
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easter Bunny Debugging</title>
 
@@ -21,8 +21,8 @@
      <!-- <img src="easter-bunny-150-profile.png"> -->
       <img src="easter-bunny-150-profile.png" alt="Easter Bunny Profile Image">
       <p>Dallas College WebDev Class</p>
-      <
-    </header>
+      <!-- <   Unnecessary tag removed -->
+          </header>
     <nav id="myTopnav" class="topnav">
       <a href="index.html">Home</a>
       <a href="#">FAQs</a>
@@ -67,6 +67,17 @@
         </article>
       </section>
     </main>
+<aside>
+ <h2>Debugging Notes</h2>
+   <ul>
+    <li><strong>Empty &lt;meta&gt; tag:</strong> Fixed by adding <code>charset="UTF-8"</code> and completing the viewport line.</li>
+    <li><strong>Trailing slashes on &lt;link&gt; tags:</strong> Removed the <code>/</code> at the end of <code>&lt;link&gt;</code> tags for HTML5 compliance.</li>
+    <li><strong>Missing alt on image:</strong> Added <code>alt="Easter Bunny Profile Image"</code> to the <code>&lt;img&gt;</code> tag for accessibility.</li>
+    <li><strong>Improper nesting of tags:</strong> Moved paragraph content outside of the <code>&lt;h3&gt;</code> tag for correct structure.</li>
+    <li><strong>Stray character in header:</strong> Removed extra <code>&lt;</code> symbol that appeared after the paragraph in the header.</li>
+    <li><strong>Missing closing tags:</strong> Added <code>&lt;/body&gt;</code> and <code>&lt;/html&gt;</code> at the bottom of the page to properly close the document.</li>
+  </ul>
+</aside>
     <footer>
       <h2>My Avatar The Easter Bunny</h2>
       <p>Dallas College WebDev &copy; 2021</p>
