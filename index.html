@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!-- added lang attribute for accessibility -->
+<html lang="en">
  <head>
     <!--<meta> -->
     <meta charset="UTF-8">
@@ -63,13 +64,15 @@
         <article>
          <!-- <h3>Enough Content --> 
           <h3>Enough Content</h3>
-            <p>You need enough content to thoroghly populate your page. The content should cause the page to be long enough to need to scroll. Keep copy/pasting content from Wikipedia until you have enough content to scroll. You will use this page later to embellish it with styles, color, formatting and layouts.</p>
+          <!-- Fixed spelling -->
+            <p>You need enough content to thoroughly populate your page. The content should cause the page to be long enough to need to scroll. Keep copy/pasting content from Wikipedia until you have enough content to scroll. You will use this page later to embellish it with styles, color, formatting and layouts.</p>
         </article>
       </section>
     </main>
 <aside>
  <h2>Debugging Notes</h2>
    <ul>
+    <li><strong>missing lang</strong> Fixed by adding <code>lang="en"</code></li>
     <li><strong>Empty &lt;meta&gt; tag:</strong> Fixed by adding <code>charset="UTF-8"</code> and completing the viewport line.</li>
     <li><strong>Trailing slashes on &lt;link&gt; tags:</strong> Removed the <code>/</code> at the end of <code>&lt;link&gt;</code> tags for HTML5 compliance.</li>
     <li><strong>Missing alt on image:</strong> Added <code>alt="Easter Bunny Profile Image"</code> to the <code>&lt;img&gt;</code> tag for accessibility.</li>
