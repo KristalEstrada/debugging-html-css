@@ -1,78 +1,19 @@
-# Debugging Assignment Files
+<aside>
+ <h2>Debugging Notes </h2>
+   <ul>
+    <li><strong>missing lang</strong> Fixed by adding <code>lang="en"</code></li>
+    <li><strong>Empty &lt;meta&gt; tag:</strong> Fixed by adding <code>charset="UTF-8"</code> and completing the viewport line.</li>
+    <li><strong>Trailing slashes on &lt;link&gt; tags:</strong> Removed the <code>/</code> at the end of <code>&lt;link&gt;</code> tags for HTML5 compliance.</li>
+    <li><strong>Missing alt on image:</strong> Added <code>alt="Easter Bunny Profile Image"</code> to the <code>&lt;img&gt;</code> tag for accessibility.</li>
+    <li><strong>Improper nesting of tags:</strong> Moved paragraph content outside of the <code>&lt;h3&gt;</code> tag for correct structure.</li>
+    <li><strong>Stray character in header:</strong> Removed extra <code>&lt;</code> symbol that appeared after the paragraph in the header.</li>
+    <li><strong>Missing closing tags:</strong> Added <code>&lt;/body&gt;</code> and <code>&lt;/html&gt;</code> at the bottom of the page to properly close the document.</li>
+  </ul>
+</aside>
 
-Welcome to the Debugging Assignment repository! This repository contains the resources for the debugging assignment in the Web Design Tools course. Students will debug the provided HTML and CSS files to meet W3C standards and accessibility guidelines.
-
-## Files Included
-
-1. **index.html**
-   - Contains intentional errors for students to identify and fix.
-   - Errors include issues with HTML syntax, structure, accessibility, and semantic correctness.
-
-2. **style.css**
-   - Includes intentional errors related to CSS syntax, selectors, and properties.
-
-3. **Expected Site Design**
-   - Includes a screenshot of the error-free page (`images/expected-site-design.png`) to serve as a reference for students.
-
-### File Structure
-```
-debugging-html-css/
-├── css/
-│   ├── style.css
-│   ├── layout.css
-├── images/
-│   ├── easter-bunny-150-profile.png
-│   ├── expected-site-design.png
-├── index.html
-├── README.md
-```
-
-## Objective
-
-The goal of this assignment is to:
-- Develop debugging skills by identifying and correcting errors in HTML and CSS.
-- Improve familiarity with W3C standards and accessibility best practices.
-- Practice using debugging tools and validators to ensure standards-compliant code.
-- Learn to document errors and resolutions in a structured manner.
-
-## Instructions
-
-1. **Clone this repository** to your local machine:
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. Open the `index.html` and `style.css` files in your favorite text editor or IDE (e.g., Visual Studio Code).
-
-3. Identify the errors in both files. Use tools like:
-   - [W3C HTML Validator](https://validator.w3.org/)
-   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-   - [Wave Accessibility Checker](https://wave.webaim.org/)
-
-4. Update the `<aside>` element list in the `index.html` file.
-   - Inside the `<aside>` list, describe each error and provide an explanation of the resolution.
-
-5. Resolve all identified errors in the `index.html` and `style.css` files by:
-   - Commenting out the original error code.
-   - Adding the corrected code directly below the commented-out error code.
-
-6. Once all errors are corrected:
-   - Commit your changes and push them to your own GitHub repository.
-   - Deploy the corrected project to GitHub Pages.
-
-7. Submit your GitHub repository link and GitHub Pages link as instructed in the course.
-
-## Tools and Resources
-
-- [W3C HTML Validator](https://validator.w3.org/)
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-- [Wave Accessibility Checker](https://wave.webaim.org/)
-- [MDN Web Docs](https://developer.mozilla.org/)
-
-## License
-
-This repository is for educational purposes only. All content is copyrighted by the course instructor and may not be distributed without permission.
-
----
-
-Happy debugging!
+33	footer	Value Error : color #B2 is not a valid color 3 or 6 hexadecimals numbers : #B2  LOOKED FOR COLOR ON EXPECTED FROM IMAGES GRABED COLOR CODE FROM WITHIN STYLE.CSS
+43	h1	Value Error : font-size Too many values or values are not recognized : 5 vw REMOVED SPACE BETWEEN 5 AND VW 
+66	p	Value Error : line-height Unknown dimension 1.35me swicthed m and e around to correct 
+85	.error	Value Error : color #FE27122 is not a valid color 3 or 6 hexadecimals numbers : #FE27122 error color is red removed extra two on number code 
+94	a:hover	Value Error : text-decoration all is not a text-decoration value : all all is not a valid value for text decoration replaced with none
+line 8 changed background coolor to white 
