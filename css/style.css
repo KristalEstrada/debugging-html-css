@@ -4,27 +4,42 @@
 	box-sizing: inherit;
 }
 
-body {
-	background-color: #ffffff;
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
 }
 
 main {
+	color: #202020;
+	flex: 1;
+	padding: 2em;
 	color: #202020;
 }
 
 header {
 	background-color: #2E6C85;
 	width: 100%;
+	display: flex;
+	align-items: center;
 }
 
 header img {
-	position: absolute;
-	top: 10px;
-	right: 10%;
-	z-index: 5;
-	width: auto;
+	position: static;
+	margin-left: auto;
 	max-width: 15vw;
 	height: auto;
+}
+
+.header-content {
+	width: 100%;
+	text-align: center;
 }
 
 footer {
@@ -35,7 +50,7 @@ footer {
 }
 
 footer h2 {
-	color: #B2D732
+	color: #B2D732;
 }
 
 h1 {
@@ -48,15 +63,15 @@ h1 {
 	margin: 0px;
 }
 
-h2,
-h4,
-h5 {
+h2 {
 	color: #C04402;
 	font-family: 'Architects Daughter', cursive;
 	margin-top: 1em;
 }
 
-h3 {
+h3,
+h4,
+h5 {
 	color: #2E6C85;
 	margin-top: 1em;
 }
@@ -97,4 +112,25 @@ a:hover {
 a:visited {
 	color: #FE2712;
 	text-decoration: none;
+}
+.sidebar {
+	background-color: #B2D732;
+	width: 200px;
+	color: #C04402;
+	font-family: 'Courier New', Courier, monospace;
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	z-index: 10;
+}
+/* Sidebar links */
+.sidebar a {
+	color: #C04402;
+	text-decoration: none;
+	margin-bottom: 1em;
+	font-size: 1.1em;
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+.sidebar a:hover {
+	color: #092834;
 }

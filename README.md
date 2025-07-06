@@ -17,3 +17,12 @@
 85	.error	Value Error : color #FE27122 is not a valid color 3 or 6 hexadecimals numbers : #FE27122 error color is red removed extra two on number code 
 94	a:hover	Value Error : text-decoration all is not a text-decoration value : all all is not a valid value for text decoration replaced with none
 line 8 changed background coolor to white 
+line 24 removed 
+
+h5 change color 
+h4  change color 
+h5 need to change size 
+line 60 removed breaks 
+added side bar in style.css
+line 33 removed menu and added javascript 
+ <h1> is now wrapped in a <div class="header-content">
