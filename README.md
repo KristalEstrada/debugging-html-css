@@ -1,28 +1,43 @@
-<aside>
- <h2>Debugging Notes </h2>
-   <ul>
-    <li><strong>missing lang</strong> Fixed by adding <code>lang="en"</code></li>
-    <li><strong>Empty &lt;meta&gt; tag:</strong> Fixed by adding <code>charset="UTF-8"</code> and completing the viewport line.</li>
-    <li><strong>Trailing slashes on &lt;link&gt; tags:</strong> Removed the <code>/</code> at the end of <code>&lt;link&gt;</code> tags for HTML5 compliance.</li>
-    <li><strong>Missing alt on image:</strong> Added <code>alt="Easter Bunny Profile Image"</code> to the <code>&lt;img&gt;</code> tag for accessibility.</li>
-    <li><strong>Improper nesting of tags:</strong> Moved paragraph content outside of the <code>&lt;h3&gt;</code> tag for correct structure.</li>
-    <li><strong>Stray character in header:</strong> Removed extra <code>&lt;</code> symbol that appeared after the paragraph in the header.</li>
-    <li><strong>Missing closing tags:</strong> Added <code>&lt;/body&gt;</code> and <code>&lt;/html&gt;</code> at the bottom of the page to properly close the document.</li>
-  </ul>
-</aside>
+Debugging Notes
 
-33	footer	Value Error : color #B2 is not a valid color 3 or 6 hexadecimals numbers : #B2  LOOKED FOR COLOR ON EXPECTED FROM IMAGES GRABED COLOR CODE FROM WITHIN STYLE.CSS
-43	h1	Value Error : font-size Too many values or values are not recognized : 5 vw REMOVED SPACE BETWEEN 5 AND VW 
-66	p	Value Error : line-height Unknown dimension 1.35me swicthed m and e around to correct 
-85	.error	Value Error : color #FE27122 is not a valid color 3 or 6 hexadecimals numbers : #FE27122 error color is red removed extra two on number code 
-94	a:hover	Value Error : text-decoration all is not a text-decoration value : all all is not a valid value for text decoration replaced with none
-line 8 changed background coolor to white 
-line 24 removed 
+HTML Fixes:
 
-h5 change color 
-h4  change color 
-h5 need to change size 
-line 60 removed breaks 
-added side bar in style.css
-line 33 removed menu and added javascript 
- <h1> is now wrapped in a <div class="header-content">
+Missing lang attribute: Added lang="en" to the <html> tag for accessibility and standards compliance.
+
+Empty <meta> tag: Added charset="UTF-8" and completed the viewport line with: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Trailing slashes on <link> tags: Removed self-closing slashes (/) for HTML5 compliance.
+
+Missing alt attribute on image: Added alt="Easter Bunny Profile Image" to <img> tag for accessibility.
+
+Improper nesting of tags: Moved paragraph content out of <h3> tag and placed it in a proper <p> tag.
+
+Stray character in header: Removed an extra < symbol that appeared after a paragraph inside the header.
+
+Missing closing tags: Added </body> and </html> at the bottom of the page to close the document properly.
+
+Header cleanup: Wrapped <h1> in a <div class="header-content"> for better structure and styling.
+
+CSS Fixes:
+
+Line 8 – Background color: Changed background color to white.
+
+Line 24 – Removed rule: Deleted an unused or unnecessary rule.
+
+Line 33 – Sidebar/menu update: Removed "menu" and added JavaScript functionality; styles for sidebar were added to style.css.
+
+Line 43 – Font size fix: Fixed font-size: 5 vw to font-size: 5vw (removed space).
+
+Line 60 – Clean layout: Removed <br> tags to avoid unnecessary spacing.
+
+Line 66 – Line height typo: Corrected line-height: 1.35me to line-height: 1.35em.
+
+Line 85 – Invalid color: Fixed hex color #FE27122 by removing the extra digits; corrected to #FE2712 (red).
+
+Line 94 – Invalid text-decoration: Replaced text-decoration: all with text-decoration: none.
+
+Heading colors and size:
+
+Changed <h4> and <h5> text colors.
+
+Adjusted font size for <h5> to improve visibility.
